@@ -39,7 +39,7 @@ Tasks:
 5. Suggest suitable job roles for the candidate based on the resume and job requirements.
 
 Important:
-- Do not provide a resume match percentage.
+- Do not provide a resume match percentage instead provide the score from the retrieved chunks.
 - Keep the output concise, clear, and readable.
 - Avoid repeating the same content across sections.
 - Present the information in a structured format with headings.
