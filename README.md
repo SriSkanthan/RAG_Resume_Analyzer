@@ -40,13 +40,18 @@ Gemini prompt analysis
 ```text
 rag_resume_analyzer/
 ├── app.py
+├── gemini_client.py
+├── resume_reader.py
+├── resume_retriever.py
 ├── README.md
 ├── requirements.txt
+├── .gitignore
 ├── sample_job_description.txt
 ├── sample_resumes/
 │   └── sample_resume.txt
-└── .streamlit/
-    └── secrets.toml
+├── .streamlit/
+│   └── secrets.toml
+└── .venv/
 ```
 
 ## Setup

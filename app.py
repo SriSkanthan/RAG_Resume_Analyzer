@@ -26,3 +26,10 @@ if st.button("Analyze Resume"):
 
         st.subheader("Resume Analysis")
         st.write(final_response)
+
+        st.download_button(
+            label="Download Report",
+            data=final_response,
+            file_name="resume_analysis_report.txt",
+            mime="text/plain",
+        )
