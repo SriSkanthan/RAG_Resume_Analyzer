@@ -114,7 +114,7 @@ The app uses **Gemini 2.5 Flash** as the default model for resume analysis. To c
 MODEL_NAME = "gemini-2.5-flash"  # Change this to your preferred model
 ```
 
-Supported models: `gemini-2.5-flash`, `gemini-3-flash`, or any other available Gemini model.
+Supported models: `gemini-2.5-flash`, `gemini-3.1-flash`, or any other available Gemini model.
 
 ## Responsible AI Guidelines
 
