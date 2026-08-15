@@ -2,7 +2,7 @@ import google.generativeai as genai
 import streamlit as st
 
 # Change this single value when you want to swap model versions.
-MODEL_NAME = "gemini-3-flash"
+MODEL_NAME = "gemini-2.5-flash"
 
 
 def configure_gemini():
