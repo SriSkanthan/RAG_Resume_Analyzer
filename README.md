@@ -103,8 +103,33 @@ Open the local URL shown in the terminal, usually:
 http://localhost:8501
 ```
 
+## AI Model Configuration
+
+The app uses **Gemini 2.5 Flash** as the default model for resume analysis. To change the model version:
+
+1. Open `gemini_client.py`
+2. Modify the `MODEL_NAME` constant at the top of the file:
+
+```python
+MODEL_NAME = "gemini-2.5-flash"  # Change this to your preferred model
+```
+
+Supported models: `gemini-2.5-flash`, `gemini-3-flash`, or any other available Gemini model.
+
+## Responsible AI Guidelines
+
+This tool is designed to assist with resume analysis and should be used responsibly:
+
+- ✓ Use the tool for guidance, not automatic hiring or rejection.
+- ✓ Evaluate only job-related skills, education, projects, and relevant experience.
+- ✓ Explain that match scores are estimates, not recruiter decisions.
+- ✓ Protect uploaded resumes and delete temporary files after processing.
+- ✓ Do not claim that missing keywords always mean missing ability.
+- ✗ Do not score gender, age, religion, nationality, photograph, marital status, or disability.
+
 ## Notes
 
 - The job-readiness score is a similarity-based estimate, not a professional hiring metric.
 - The analysis is intended to help identify gaps and opportunities, not to make hiring decisions automatically.
 - The app uses the most relevant resume chunks only to keep the prompt grounded and reduce repeated content.
+- Gemini API key is required to run the app; ensure you have a valid key from [Google AI Studio](https://aistudio.google.com).

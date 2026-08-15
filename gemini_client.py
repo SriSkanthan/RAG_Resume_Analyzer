@@ -1,6 +1,9 @@
 import google.generativeai as genai
 import streamlit as st
 
+# Change this single value when you want to swap model versions.
+MODEL_NAME = "gemini-3-flash"
+
 
 def configure_gemini():
     """Configure the Gemini API key from Streamlit secrets."""
@@ -43,7 +46,15 @@ Important:
 - Keep the output concise, clear, and readable.
 - Avoid repeating the same content across sections.
 - Present the information in a structured format with headings.
+
+Responsible AI Guidelines:
+- Use the tool for guidance, not automatic hiring or rejection.
+- Do not score gender, age, religion, nationality, photograph, marital status, or disability.
+- Evaluate only job-related skills, education, projects, and relevant experience.
+- Explain that match scores are estimates, not recruiter decisions.
+- Protect uploaded resumes and delete temporary files after processing.
+- Do not claim that missing keywords always mean missing ability.
 """
-    model = genai.GenerativeModel("gemini-2.5-flash")
+    model = genai.GenerativeModel(MODEL_NAME)
     response = model.generate_content(prompt)
     return response.text
